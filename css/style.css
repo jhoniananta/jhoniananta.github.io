@@ -3,10 +3,6 @@
 html {
   scroll-behavior: smooth;
 }
-header {
-  color: #dde6ed;
-}
-
 a,
 a:hover,
 a:focus {
@@ -126,10 +122,15 @@ a:focus {
   justify-content: space-between;
 }
 
-.cta-section .btn {
+.cta-section .btn{
   padding: 0.3em 0.5em;
   background-color: #898989;
   border-color:#898989;
+}
+
+.cta-section .btn:hover{
+  background-color: transparent;
+  color: black;
 }
 
 @media screen and (max-width:475px) {
@@ -147,4 +148,13 @@ a:focus {
   padding: 0.3em 0.5em;
   background-color: white;
   border-color:white;
+}
+
+
+/* Custom About CSS */
+
+.bg-about{
+  background: #222831;
+  height: 100%;
+  max-height: 100vh;
 }
