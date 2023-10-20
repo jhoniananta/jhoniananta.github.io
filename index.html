@@ -10,20 +10,30 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Icon on the website -->
-    <link rel="icon" href="./img/favicon.png" />
-    <title>MakanKu</title>
+    <link rel="icon" href="./img/icon_burger.png" />
+    <title>BurgerBites</title>
   </head>
 
   <body>
+    <!-- Section Home dan Navbar -->
     <div class="area-awal">
       <div class="bg-box">
         <img src="img/hero-bg.jpg" alt="" />
       </div>
+      <!-- Navbar -->
       <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-xxl">
-            <a class="navbar-brand" href="#Home">
-              <h3 class="fw-bold">Makanku</h3>
+        <nav
+          class="navbar fixed-top navbar-expand-lg navbar-dark "
+        >
+          <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#home">
+              <img
+                src="./img/icon_burger.png"
+                style="width: 2rem; height: 1.7rem"
+                alt="icon"
+                class="d-inline-block align-text-top"
+              />
+              <h4 class="fw-medium d-none d-md-inline ps-1">BurgerBites</h4>
             </a>
             <button
               class="navbar-toggler"
@@ -55,15 +65,20 @@
           </div>
         </nav>
       </header>
+      <!-- Section Home dan carousel nya -->
       <section class="slider_section" id="home">
-        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div
+          id="customCarousel1"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="5000">
               <div class="container">
                 <div class="row px-4">
                   <div class="col-md-7 col-lg-6">
                     <div class="detail-box">
-                      <h1>Juicy Perfection</h1>
+                      <h2>Juicy Perfection</h2>
                       <p>
                         Take a bite out of juicy perfection with our
                         mouthwatering burgers! Sink your teeth into the juiciest
@@ -77,12 +92,12 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="5000">
               <div class="container">
                 <div class="row px-5">
                   <div class="col-md-7 col-lg-6">
                     <div class="detail-box">
-                      <h1>Burger Bliss</h1>
+                      <h2>Burger Bliss</h2>
                       <p>
                         Craving a truly satisfying burger? We've got the fixings
                         to fulfill your wildest burger dreams. Experience burger
@@ -97,12 +112,12 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="5000">
               <div class="container">
                 <div class="row px-5">
                   <div class="col-md-7 col-lg-6">
                     <div class="detail-box">
-                      <h1>Gourmet Indulgence</h1>
+                      <h2>Gourmet Indulgence</h2>
                       <p>
                         Escape the ordinary with our gourmet burgers - an
                         explosion of flavors in every bite! Let your palate
@@ -163,13 +178,76 @@
       </section>
     </div>
 
-    <section id="menu" class="my-4 flex-column j">
-      <div class="card justify-content-center align-content-center mx-auto" style="width: 18rem;">
-        <img src="./img/burger2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- Section Menu -->
+    <section
+      id="menu"
+      class="my-4 mx-2" style="height: 100vh;"
+    >
+      <!-- Menu Title -->
+      <div class="menu-title m-4">
+        <h1 class="text-center">Our Menu</h1>
+      </div>
+      <!-- Card menu -->
+      <div class="d-flex flex-column flex-wrap justify-content-center gap-5">
+        <div class="card mx-auto">
+          <img src="./img/burger2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="text-section">
+              <h5 class="card-title">Classic A juicy beef patty</h5>
+              <p class="card-text">
+                The Classic A juicy beef patty with melted cheese, lettuce, tomato, onion, pickles, and signature sauce on a toasted sesame bun. The quintessential burger done right.
+              </p>
+            </div>
+            <div class="cta-section">
+              <div>$5.00</div>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-dark mx-auto">
+          <img src="./img/burger3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="text-section">
+              <h5 class="card-title">Spicy Southwest Cajun</h5>
+              <p class="card-text">
+                The Spicy Southwest Cajun seasoned beef patty topped with pepperjack cheese, jalapeños, crispy fried onions, lettuce, tomato, and a fiery chipotle aioli. A taste of the Southwest in burger form.
+              </p>
+            </div>
+            <div class="cta-section">
+              <div>$5.00</div>
+              <a href="#" class="btn btn-light dark-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-auto">
+          <img src="./img/burger-4.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="text-section">
+              <h5 class="card-title">Hawaiian Sweet</h5>
+              <p class="card-text">
+                The Hawaiian Sweet and savory burger with a beef patty, grilled pineapple, crispy bacon, melted Swiss cheese, lettuce, tomato, and tangy Hawaiian glaze on a toasted bun. A tropical burger getaway.
+              </p>
+            </div>
+            <div class="cta-section">
+              <div>$5.00</div>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card card-dark mx-auto">
+          <img src="./img/burger-5.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="text-section">
+              <h5 class="card-title">Truffle Mushroom Beef patty</h5>
+              <p class="card-text">
+                The Truffle Mushroom Beef patty smothered in sautéed mushrooms and truffle aioli then topped with melted Gruyère cheese, arugula, and tomato on a brioche bun.
+              </p>
+            </div>
+            <div class="cta-section">
+              <div>$5.00</div>
+              <a href="#" class="btn btn-light dark-btn">Order Now</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
