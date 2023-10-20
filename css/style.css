@@ -16,12 +16,12 @@ a:focus {
     flex-direction: column;
 }
 
-/* Custom Navbar */
+/* Custom Navbar when scrolled */
 .navbar{
   transition: all 0.6s;
 }
 .navbar-scrolled{
-  background-color: black;
+  background-color: #222831;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -133,12 +133,39 @@ a:focus {
   color: black;
 }
 
+/* Section menu for responsive (mobile) */
 @media screen and (max-width:475px) {
   .card {
-    font-size: 1em;
+    font-size: 1.2em;
+    flex-direction: column;
+  }
+  .card img{
+    max-width: 100%;
+    margin: auto;
+    padding: 0.6em;
+    border-radius: 0.7em;
+  }
+
+  .text-section{
+    max-width: 90%;
+  }
+  
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cta-section{
+    max-width: 100%;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
+/* CSS for dark card */
 .card-dark{
   background-color: #898989;
   color: #ffffff;
@@ -151,10 +178,47 @@ a:focus {
 }
 
 
-/* Custom About CSS */
+/* Section Custom About CSS */
 
-.bg-about{
+.about_section {
   background: #222831;
-  height: 100%;
-  max-height: 100vh;
+  color: #ffffff;
+}
+
+.about_section .row {
+  align-items: center;
+}
+
+.about_section .img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about_section .img-box img {
+  padding: 2.5rem 0 2.5rem 0;
+  width: 100%;
+  max-width: 445px;
+  position: relative;
+  z-index: 2;
+}
+
+.about_section .detail-box p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 45px;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: #e69c00;
 }
