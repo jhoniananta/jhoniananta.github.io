@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
-html {
+body {
   scroll-behavior: smooth;
 }
 a,
@@ -18,7 +18,7 @@ a:focus {
 
 /* Custom Navbar when scrolled */
 .navbar{
-  transition: all 0.6s;
+  transition: all 0.5s;
 }
 .navbar-scrolled{
   background-color: #222831;
@@ -133,38 +133,6 @@ a:focus {
   color: black;
 }
 
-/* Section menu for responsive (mobile) */
-@media screen and (max-width:475px) {
-  .card {
-    font-size: 1.2em;
-    flex-direction: column;
-  }
-  .card img{
-    max-width: 100%;
-    margin: auto;
-    padding: 0.6em;
-    border-radius: 0.7em;
-  }
-
-  .text-section{
-    max-width: 90%;
-  }
-  
-  .card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .cta-section{
-    max-width: 100%;
-    margin-top: 10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
 /* CSS for dark card */
 .card-dark{
   background-color: #898989;
@@ -176,7 +144,6 @@ a:focus {
   background-color: white;
   border-color:white;
 }
-
 
 /* Section Custom About CSS */
 
@@ -221,4 +188,63 @@ a:focus {
 
 .about_section .detail-box a:hover {
   background-color: #e69c00;
+}
+
+/* CSS for responsive (mobile) */
+@media screen and (max-width:475px) {
+  /* Responsive section home */
+  .area-awal{
+    padding-top: 1.2rem;
+  }
+
+  /* Responsive section menu */
+  .card {
+    font-size: 1.2em;
+    flex-direction: column;
+  }
+  .card img{
+    max-width: 100%;
+    margin: auto;
+    padding: 0.6em;
+    border-radius: 0.7em;
+  }
+
+  .text-section{
+    max-width: 90%;
+  }
+  
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cta-section{
+    max-width: 100%;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cta-section .btn{
+    padding: 0.4em 0.6em;
+  }
+
+  /* Responsive section about */
+  .detail-box a{
+    margin: 15px;
+  }
+
+  .about_section .img-box img{
+    margin: 15px;
+  }
+  .detail-box h1{
+    margin: 15px;
+  }
+
+  .detail-box p{
+    font-size: 1.1rem;
+    margin: 15px 15px;
+  }
 }
