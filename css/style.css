@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
+
 body {
   scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 a,
 a:hover,
@@ -10,10 +13,10 @@ a:focus {
 }
 
 .area-awal{
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Custom Navbar when scrolled */
@@ -150,6 +153,7 @@ a:focus {
 .about_section {
   background: #222831;
   color: #ffffff;
+  padding: 90px 0;
 }
 
 .about_section .row {
@@ -188,6 +192,38 @@ a:focus {
 
 .about_section .detail-box a:hover {
   background-color: #e69c00;
+}
+
+/* Custom CSS Section form contact */
+
+.form-group input{
+  border-radius: 10px;
+  border: 2px solid #898989;
+  display: block;
+}
+
+.form-group textarea{
+  border-radius: 10px;
+  border: 2px solid #898989;
+  display: block;
+}
+
+.error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
+.form-group input:focus {
+  outline: 0;
+}
+
+.form-group.success input {
+  border-color: #09c372;
+}
+
+.form-group .error input {
+  border-color: #ff3860;
 }
 
 /* CSS for responsive (mobile) */

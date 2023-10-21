@@ -253,7 +253,7 @@
     </section>
 
     <!-- Section About -->
-    <section class="about_section layout_padding" id="about">
+    <section class="about_section" id="about">
       <div class="container ">
         <div class="row">
           <div class="col-md-6 ">
@@ -281,9 +281,81 @@
     </section>
 
     <!--Section Form Contact  -->
-    <section id="contact">
-      
-    </section>
+    <div id="contact" class="container-fluid contact shadow py-5" height="100vh">
+      <div class="container">
+        <div class="contact-title">
+          <h1 class="text-center">Stay connected with us!
+          </h1>
+          <h5 class="text-center">have any question? feel free to ask..</h5>
+        </div>
+        <section class="pt-4">
+          <form id="contact-form" action="" >
+            <div class="form-group row">
+              <div class="col-md-2 col-lg-3"></div>
+              <div class="col-12 col-md-8 col-lg-6 mb-3">
+                <label for="nama" class="labelform">Name :</label>
+                <input type="text" id="nama" class="form-control form-control-md inputform" placeholder="Your Name"/>
+              </div>
+              <div class="col-md-2 col-lg-3"></div>
+
+              <!-- Validasi Nama -->
+              <div class="col-md-2 col-lg-3"></div>
+              <div class="col-12 col-md-8 col-lg-6">
+                <div id="validasiNama"></div>
+              </div>
+              <div class="col-md-2 col-lg-3"></div>
+
+              <div class="col-md-2 col-lg-3"></div>
+                <div class="col-12 col-md-8 col-lg-6 mb-3">
+                  <label for="email" class="labelform">Email :</label>
+                  <input type="text" id="email" class="form-control form-control-md inputform" placeholder="Your Email"/>
+                </div>
+              <div class="col-md-2 col-lg-3"></div>
+              
+              <!-- Validasi email -->
+              <div class="col-md-2 col-lg-3"></div>
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div id="validasiEmail"></div>
+                </div>
+              <div class="col-md-2 col-lg-3"></div>
+
+              <div class="col-md-2 col-lg-3"></div>
+                <div class="col-12 col-md-8 col-lg-6 mb-3">
+                  <label for="pesan" class="labelform">Message :</label>
+                  <textarea type="text" id="pesan" rows="3" class="form-control form-control-md inputform mb-2" placeholder="Write your message here"></textarea>
+                </div>
+              <div class="col-md-2 col-lg-3"></div>
+              
+              <!-- Validasi pesan -->
+              <div class="col-md-2 col-lg-3"></div>
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div id="validasiPesan" class="mb-2"></div>
+                </div>
+                <div class="col-md-2 col-lg-3"></div>
+              
+              <div class="col-md-2 col-lg-3"></div>
+                <div class="col-12 col-md-8 col-lg-6 pb-3">
+                  <button onclick="validateInput()" type="button" class="btn btn-dark">Submit</button>
+                </div>
+              <div class="col-md-2 col-lg-3"></div>
+
+              <!-- Message terkirimkan -->
+              <div class="col-md-2 col-lg-3"></div>
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div id="sendmessage"></div>
+                </div>
+                <div class="col-md-2 col-lg-3"></div>
+
+            </div> 
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div>
+
+    </div>
 
     <!-- Import Bootstrap5 and popper JS -->
     <script
