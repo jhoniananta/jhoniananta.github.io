@@ -226,6 +226,20 @@ a:focus {
   border-color: #ff3860;
 }
 
+
+/* Footer */
+footer{
+  width: 100%;
+  font-weight: bold;
+  background-color: #222831;
+  text-align: center;
+}
+
+footer p{
+  background-color: #222831;
+  color: white;
+}
+
 /* CSS for responsive (mobile) */
 @media screen and (max-width:475px) {
   /* Responsive section home */

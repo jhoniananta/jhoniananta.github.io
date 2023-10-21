@@ -9,36 +9,6 @@ window.addEventListener('scroll', () =>{
     }
 })
 
-// Form contact validation
-// var nama = document.getElementById("nama").value;
-// var email = document.getElementById("email").value;
-// var pesan = document.getElementById("pesan").value;
-
-// form.addEventListener('submit', e => {
-//     e.preventDefault();
-
-//     validateInput();
-// });
-
-// // Set Error message
-// const setError = (element, message) => {
-//     const inputControl = element.parentElement;
-//     const errorDisplay = inputControl.querySelector('.error');
-
-//     errorDisplay.innerText = message;
-//     inputControl.classList.add('error');
-//     inputControl.classList.remove('success')
-// }
-// // Set success
-// const setSuccess = element => {
-//     const inputControl = element.parentElement;
-//     const errorDisplay = inputControl.querySelector('.error');
-
-//     errorDisplay.innerText = '';
-//     inputControl.classList.add('success');
-//     inputControl.classList.remove('error');
-// };
-
 // Regex validasi email
 const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
